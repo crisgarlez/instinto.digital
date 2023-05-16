@@ -19,7 +19,7 @@ const siteMetadata = {
   facebook: 'https://www.facebook.com/coninstinto',
   youtube: '',
   linkedin: '',
-  locale: 'en-US',
+  locale: 'es-EC',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.

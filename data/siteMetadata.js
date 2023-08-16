@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'Instinto Digital',
   description: 'Digitales por instinto',
   language: 'es-ec',
-  theme: 'system', // system, dark or light
+  theme: 'light', // system, dark or light
   siteUrl: 'https://instinto.digital/',
   siteRepo: 'https://github.com/crisgarlez/instinto.digital',
   siteLogo: '/static/images/logo.png',

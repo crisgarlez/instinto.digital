@@ -1,7 +1,7 @@
-import SectionWrapper from "@/components/section-wrapper";
-import NavLink from "@/components/navlink";
-import ctaImage from "../public/images/cta-image.jpg";
-import Image from "next/image";
+import SectionWrapper from '@/components/section-wrapper'
+import NavLink from '@/components/navlink'
+import ctaImage from '../public/images/cta-image.jpg'
+import Image from 'next/image'
 
 const CTA = () => {
   return (
@@ -20,11 +20,10 @@ const CTA = () => {
               Cree modelos comerciales exitosos con nuestras soluciones de TI
             </h2>
             <p className="mt-3 text-gray-600">
-              Instinto Digital, una empresa de desarrollo de software, ayuda a
-              digitalizar las empresas centrándose en los desafíos y necesidades
-              comerciales de los clientes. Valoramos la cooperación estrecha y
-              transparente y alentamos a nuestros clientes a participar
-              activamente en el ciclo de vida del desarrollo del proyecto.
+              Instinto Digital, una empresa de desarrollo de software, ayuda a digitalizar las
+              empresas centrándose en los desafíos y necesidades comerciales de los clientes.
+              Valoramos la cooperación estrecha y transparente y alentamos a nuestros clientes a
+              participar activamente en el ciclo de vida del desarrollo del proyecto.
             </p>
             <a
               href="https://calendly.com/digitalinstinto"
@@ -38,7 +37,7 @@ const CTA = () => {
         </div>
       </div>
     </SectionWrapper>
-  );
-};
+  )
+}
 
-export default CTA;
+export default CTA

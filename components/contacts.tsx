@@ -1,4 +1,4 @@
-import SectionWrapper from "./section-wrapper";
+import SectionWrapper from './section-wrapper'
 
 const Contacts = () => {
   const contactMethods = [
@@ -24,8 +24,8 @@ const Contacts = () => {
           />
         </svg>
       ),
-      contact: "Guayaquil, Guayas, Ecuador.",
-      title: "Ciudad",
+      contact: 'Guayaquil, Guayas, Ecuador.',
+      title: 'Ciudad',
     },
     {
       icon: (
@@ -44,8 +44,8 @@ const Contacts = () => {
           />
         </svg>
       ),
-      contact: "+593 (969) 929-004",
-      title: "Teléfono",
+      contact: '+593 (969) 929-004',
+      title: 'Teléfono',
     },
     {
       icon: (
@@ -64,33 +64,28 @@ const Contacts = () => {
           />
         </svg>
       ),
-      contact: "digitalinstinto@gmail.com",
-      title: "Email",
+      contact: 'digitalinstinto@gmail.com',
+      title: 'Email',
     },
-  ];
+  ]
 
   return (
     <SectionWrapper>
-      <div
-        id="contacts"
-        className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8"
-      >
+      <div id="contacts" className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-2xl mx-auto space-y-3 sm:text-center">
           <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Háganos saber cómo podemos ayudar
           </h2>
           <p>
-            Estamos aquí para ayudarlo y responder cualquier pregunta que pueda
-            tener. Esperamos saber de usted.
+            Estamos aquí para ayudarlo y responder cualquier pregunta que pueda tener. Esperamos
+            saber de usted.
           </p>
         </div>
         <div className="mt-24">
           <ul className="mt-12 pb-24 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
             {contactMethods.map((item, idx) => (
               <li key={idx}>
-                <h4 className="text-gray-800 text-lg font-medium">
-                  {item.title}
-                </h4>
+                <h4 className="text-gray-800 text-lg font-medium">{item.title}</h4>
                 <div className="mt-3 flex items-center gap-x-3">
                   <div className="flex-none text-gray-400">{item.icon}</div>
                   <p>{item.contact}</p>
@@ -101,7 +96,7 @@ const Contacts = () => {
         </div>
       </div>
     </SectionWrapper>
-  );
-};
+  )
+}
 
-export default Contacts;
+export default Contacts

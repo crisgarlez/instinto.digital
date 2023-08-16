@@ -1,4 +1,4 @@
-import NavLink from "@/components/navlink";
+import NavLink from '@/components/navlink'
 
 const Hero = () => (
   <section>
@@ -8,8 +8,8 @@ const Hero = () => (
           Cree y escale su próxima idea de negocio más rápido
         </h1>
         <p className="max-w-xl mx-auto font-medium">
-          Instinto Digital le facilita la creación y el crecimiento de sus
-          aplicaciones o cualquier idea de negocio.
+          Instinto Digital le facilita la creación y el crecimiento de sus aplicaciones o cualquier
+          idea de negocio.
         </p>
         <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
           <a
@@ -20,17 +20,13 @@ const Hero = () => (
           >
             Agendar una llamada
           </a>
-          <NavLink
-            href="#services"
-            className="text-gray-700 border hover:bg-gray-50"
-            scroll={true}
-          >
+          <NavLink href="#services" className="text-gray-700 border hover:bg-gray-50" scroll={true}>
             Conoce nuestros servicios
           </NavLink>
         </div>
       </div>
     </div>
   </section>
-);
+)
 
-export default Hero;
+export default Hero

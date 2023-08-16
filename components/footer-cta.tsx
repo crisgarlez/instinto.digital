@@ -1,5 +1,5 @@
-import SectionWrapper from "@/components/section-wrapper";
-import NavLink from "@/components/navlink";
+import SectionWrapper from '@/components/section-wrapper'
+import NavLink from '@/components/navlink'
 
 const FooterCTA = () => (
   <SectionWrapper>
@@ -9,8 +9,8 @@ const FooterCTA = () => (
           Comience con Instinto Digital hoy
         </h2>
         <p className="mt-3 text-gray-600">
-          Contrate expertos para crear su próxima idea, siga las mejores
-          prácticas, elimine obstáculos y entregue a tiempo.
+          Contrate expertos para crear su próxima idea, siga las mejores prácticas, elimine
+          obstáculos y entregue a tiempo.
         </p>
         <a
           href="https://calendly.com/digitalinstinto"
@@ -23,6 +23,6 @@ const FooterCTA = () => (
       </div>
     </div>
   </SectionWrapper>
-);
+)
 
-export default FooterCTA;
+export default FooterCTA

@@ -1,4 +1,4 @@
-import SectionWrapper from "@/components/section-wrapper";
+import SectionWrapper from '@/components/section-wrapper'
 
 const Features = () => {
   const features = [
@@ -20,8 +20,8 @@ const Features = () => {
           <path d="M17 11l4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"></path>
         </svg>
       ),
-      title: "Software a la medida",
-      desc: "Comprendemos que cada negocio es único, y es por eso que ofrecemos soluciones de desarrollo de software a medida que se adaptan perfectamente a tus necesidades.",
+      title: 'Software a la medida',
+      desc: 'Comprendemos que cada negocio es único, y es por eso que ofrecemos soluciones de desarrollo de software a medida que se adaptan perfectamente a tus necesidades.',
     },
     {
       icon: (
@@ -41,8 +41,8 @@ const Features = () => {
           <path d="M5 4a2 2 0 012-2h12a2 2 0 012 2v16a2 2 0 01-2 2h-2.4M8 18h.01"></path>
         </svg>
       ),
-      title: "Aplicaciones móviles",
-      desc: "Trabajamos en estrecha colaboración contigo para transformar tus conceptos en aplicaciones atractivas, intuitivas y de alto rendimiento.",
+      title: 'Aplicaciones móviles',
+      desc: 'Trabajamos en estrecha colaboración contigo para transformar tus conceptos en aplicaciones atractivas, intuitivas y de alto rendimiento.',
     },
     {
       icon: (
@@ -61,10 +61,10 @@ const Features = () => {
           <path d="M5 3a2 2 0 00-2 2M19 3a2 2 0 012 2M12 12l4 10 1.7-4.3L22 16zM5 21a2 2 0 01-2-2M9 3h1M9 21h2M14 3h1M3 9v1M21 9v2M3 14v1"></path>
         </svg>
       ),
-      title: "Sitios web",
-      desc: "Diseñamos y desarrollamos sitios web que no solo capturan la atención, sino que también impulsan resultados tangibles.",
+      title: 'Sitios web',
+      desc: 'Diseñamos y desarrollamos sitios web que no solo capturan la atención, sino que también impulsan resultados tangibles.',
     },
-  ];
+  ]
 
   return (
     <SectionWrapper>
@@ -75,16 +75,14 @@ const Features = () => {
               <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">
                 {item.icon}
               </div>
-              <h4 className="text-lg text-gray-800 font-semibold">
-                {item.title}
-              </h4>
+              <h4 className="text-lg text-gray-800 font-semibold">{item.title}</h4>
               <p>{item.desc}</p>
             </li>
           ))}
         </ul>
       </div>
     </SectionWrapper>
-  );
-};
+  )
+}
 
-export default Features;
+export default Features

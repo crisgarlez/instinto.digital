@@ -1,36 +1,32 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useState } from "react";
-import Brand from "@/components/brand";
+import Link from 'next/link'
+import { useState } from 'react'
+import Brand from '@/components/brand'
 
 const Navbar = () => {
-  const [state, setState] = useState(false);
+  const [state, setState] = useState(false)
 
   const navigation = [
-    { title: "Servicios", path: "/#services" },
-    { title: "Tecnologías", path: "/#toolkit" },
-    { title: "Blog", path: "/blog" },
-    { title: "Contactos", path: "/#contacts" },
-  ];
+    { title: 'Servicios', path: '/#services' },
+    { title: 'Tecnologías', path: '/#toolkit' },
+    { title: 'Blog', path: '/blog' },
+    { title: 'Contactos', path: '/#contacts' },
+  ]
 
   const handleState = () => {
-    document.body.classList.remove("overflow-hidden");
-    setState(false);
-  };
+    document.body.classList.remove('overflow-hidden')
+    setState(false)
+  }
 
   const handleNavMenu = () => {
-    setState(!state);
-    document.body.classList.toggle("overflow-hidden");
-  };
+    setState(!state)
+    document.body.classList.toggle('overflow-hidden')
+  }
 
   return (
     <header>
-      <nav
-        className={`bg-white w-full md:static md:text-sm ${
-          state ? "fixed z-10 h-full" : ""
-        }`}
-      >
+      <nav className={`bg-white w-full md:static md:text-sm ${state ? 'fixed z-10 h-full' : ''}`}>
         <div className="custom-screen items-center mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/">
@@ -39,7 +35,6 @@ const Navbar = () => {
 
             <div className="md:hidden">
               <button
-                role="button"
                 aria-label="Open the menu"
                 className="text-gray-500 hover:text-gray-800"
                 onClick={handleNavMenu}
@@ -76,24 +71,16 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div
-            className={`flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:block ${
-              state ? "" : "hidden"
-            }`}
-          >
+          <div className={`flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:block ${state ? '' : 'hidden'}`}>
             <ul className="text-gray-700 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-gray-600 md:font-medium">
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx} className="duration-150 hover:text-gray-900">
-                    <Link
-                      href={item.path}
-                      className="block"
-                      onClick={handleState}
-                    >
+                    <Link href={item.path} className="block" onClick={handleState}>
                       {item.title}
                     </Link>
                   </li>
-                );
+                )
               })}
               <li>
                 <a
@@ -110,7 +97,7 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

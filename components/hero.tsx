@@ -13,7 +13,7 @@ const Hero = () => (
         </p>
         <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
           <a
-            href="https://calendly.com/digitalinstinto"
+            href="https://calendly.com/digitalinstinto/60min"
             target="_blank"
             rel="noopener noreferrer"
             className="py-2.5 px-4 text-center rounded-lg duration-150 text-white gradient-button "

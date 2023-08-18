@@ -84,7 +84,7 @@ const Navbar = () => {
               })}
               <li>
                 <a
-                  href="https://calendly.com/digitalinstinto"
+                  href="https://calendly.com/digitalinstinto/60min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-2.5 px-4 text-center rounded-lg duration-150 gradient-button block font-medium text-sm text-white md:inline"
